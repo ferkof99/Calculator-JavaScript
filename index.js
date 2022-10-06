@@ -7,6 +7,8 @@ console.log('\n');
 
 console.log('1. Suma');
 console.log('2. Resta');
+console.log(`3. Multiplicacion`);
+console.log(`4. División`);
 
 console.log('\n');
 console.log('Escoja la operación: ');
@@ -40,7 +42,32 @@ switch (operacionSeleccionada) {
             console.log(`El resultado de la resta es: ${resultado}`);
         }
         break;
+    case 3:
+        console.log(`Ingrese Numero Uno:  `);
+        var numeroUno = scanf(`%d`);
+        console.log(`Ingrese Numero Dos:  `);
+        var numeroDos = scanf(`%d`);
+
+        if (isNaN(numeroUno) && isNaN(numeroDos)) {
+            console.log(`Por favor debes ingresar numeros`);
+        } else {
+            let resultado = (numeroUno * numeroDos);
+            console.log(`El resultado de la multiplicación es: ${resultado}`);
+        }
+        break;
+    case 4:
+        console.log(`Ingrese Numero Uno: `);
+        var numeroUno = scanf(`%d`);
+        console.log(`Ingrese Numero Dos: `);
+        var numeroDos = scanf(`%d`);
+
+        if (isNaN(numeroUno) && isNaN(numeroDos)) {
+            console.log(`Por favor debes ingresar numeros`);
+        } else {
+            let resultado = (numeroUno / numeroDos);
+            console.log(`El resultado de la división es: ${resultado}`);
+        }        
+        break;
     default:
         console.log('La opcion seleccionada no existe en el menú')
-        break;
 }

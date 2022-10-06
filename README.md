@@ -1,3 +1,3 @@
-# Challenge One
+# Challenge Calculator #
 
-Challenge One - Suma de dos numeros
+Challenge Calculator - Suma, resta, multiplicación y división de dos numeros.
